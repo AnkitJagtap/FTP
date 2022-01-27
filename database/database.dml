@@ -1,0 +1,23 @@
+-- change this to your team id
+use ftp71;
+
+Insert into EMPLOYEES table
+
+-- The CEO
+insert into EMPLOYEES values(1000,'Rohit','CEO','2015-02-24','rohitnair703@gmail.com','8806272014',NULL,15);
+
+-- Two Managers
+insert into EMPLOYEES values(2000,'Pranav','Administration','2014-10-09','pranavjalan@gmail.com','8806275456',1000,24);
+insert into EMPLOYEES values(2001,'Sachita','Finance','2012-08-12','sachitapatil@gmail.com','339522014',1000,20);
+
+-- Two Employees
+insert into EMPLOYEES values(3000,'Pooja','Development','2017-02-08','poojasharma@gmail.com','3321512214',2000,19);
+insert into EMPLOYEES values(3001,'Rutika','R&D','2013-12-06','rutikapatel@gmail.com','3395125484',2000,18);
+
+Insert into LEAVE_DETAILS table
+
+insert into Leave_Details values (1,2000,'2018-08-15','2018-08-18',3,'Personal reason','2018-08-05','2018-08-06',default,default,' ');
+
+insert into Leave_Details values (2,2001,'2018-09-16','2018-09-19',3,'Personal reason','2018-09-05','2018-09-06',default,default,' ');
+
+insert into Leave_Details values (3,2000,'2018-09-10','2018-09-15',5,'Family Function','2018-08-20','2018-08-21',default,default,' ');

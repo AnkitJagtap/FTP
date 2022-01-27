@@ -1,0 +1,22 @@
+<title>
+    Login Form Design
+  </title>
+  <div class="bgimage" align=center>
+      
+  <link rel="stylesheet" type="text/css" href="C:\Users\Hvuser\workspace\FTP71\webui\lm-app\src\app\employee\login.component.css">
+
+  <body>
+        
+    <div class="loginbox">
+            <img src="assets/{{empId}}.png" class="icon" />
+        <h1>Login Here</h1>
+        <form>
+            <i class="fa fa-user" aria-hidden="true"></i>              
+            <input type="text" placeholder="Username" name="empId" [(ngModel)]="empId" readonly />
+            <i class="fa fa-lock" aria-hidden="true"></i>                          
+            <input type="password" required="required" placeholder="Password" name="" name="pwd" [(ngModel)]="pwd" /><br/><br/>
+            <input type="submit" name="" placeholder="Login" (click)="dashboard()" />
+        </form>
+    </div>
+  </body>
+  </div>

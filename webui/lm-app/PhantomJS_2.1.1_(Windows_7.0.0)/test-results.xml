@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<testsuite name="PhantomJS 2.1.1 (Windows 7.0.0)" package="" timestamp="2018-09-17T11:49:53" id="0" hostname="EBHVR11-03-04" tests="27" errors="0" failures="1" time="11.812">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1"/>
+  </properties>
+  <testcase name="ApplyleaveComponent should be created" time="0.487" classname="PhantomJS_2_1_1_(Windows_7_0_0).ApplyleaveComponent"/>
+  <testcase name="ApplyleaveComponent should render title in a h1 tag" time="0.452" classname="PhantomJS_2_1_1_(Windows_7_0_0).ApplyleaveComponent"/>
+  <testcase name="ApplyleaveComponent should render title in a label tag" time="0.456" classname="PhantomJS_2_1_1_(Windows_7_0_0).ApplyleaveComponent"/>
+  <testcase name="ApplyleaveComponent should render title in a option tag" time="0.531" classname="PhantomJS_2_1_1_(Windows_7_0_0).ApplyleaveComponent"/>
+  <testcase name="ApplyleaveComponent should render title in a button tag" time="0.453" classname="PhantomJS_2_1_1_(Windows_7_0_0).ApplyleaveComponent"/>
+  <testcase name="ApproveDenyComponent should be created" time="0.409" classname="PhantomJS_2_1_1_(Windows_7_0_0).ApproveDenyComponent"/>
+  <testcase name="ApproveDenyComponent should render title in a h1 tag" time="0.473" classname="PhantomJS_2_1_1_(Windows_7_0_0).ApproveDenyComponent"/>
+  <testcase name="DashboardComponent should be created" time="5.181" classname="PhantomJS_2_1_1_(Windows_7_0_0).DashboardComponent">
+    <failure type="">Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.
+</failure>
+  </testcase>
+  <testcase name="DashboardComponent should render title in a h2 tag" time="0.167" classname="PhantomJS_2_1_1_(Windows_7_0_0).DashboardComponent"/>
+  <testcase name="DashboardComponent should render title in a tag" time="0.147" classname="PhantomJS_2_1_1_(Windows_7_0_0).DashboardComponent"/>
+  <testcase name="EmployeeService should be created" time="0.062" classname="PhantomJS_2_1_1_(Windows_7_0_0).EmployeeService"/>
+  <testcase name="EmployeeComponent should be created" time="0.237" classname="PhantomJS_2_1_1_(Windows_7_0_0).EmployeeComponent"/>
+  <testcase name="EmployeeComponent should render title in a h1 tag" time="0.244" classname="PhantomJS_2_1_1_(Windows_7_0_0).EmployeeComponent"/>
+  <testcase name="EmployeeComponent should render title in a th tag" time="0.24" classname="PhantomJS_2_1_1_(Windows_7_0_0).EmployeeComponent"/>
+  <testcase name="EmployeesearchComponent should be created" time="0.269" classname="PhantomJS_2_1_1_(Windows_7_0_0).EmployeesearchComponent"/>
+  <testcase name="EmployeesearchComponent should render title in p tag" time="0.229" classname="PhantomJS_2_1_1_(Windows_7_0_0).EmployeesearchComponent"/>
+  <testcase name="EmployeesearchComponent should render title in legend tag" time="0.268" classname="PhantomJS_2_1_1_(Windows_7_0_0).EmployeesearchComponent"/>
+  <testcase name="LeaveHistoryComponent should be created" time="0" classname="PhantomJS_2_1_1_(Windows_7_0_0).LeaveHistoryComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="LoginComponent should be created" time="0.188" classname="PhantomJS_2_1_1_(Windows_7_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should render title in a h1 tag" time="0.206" classname="PhantomJS_2_1_1_(Windows_7_0_0).LoginComponent"/>
+  <testcase name="LoginComponent should render title in a title tag" time="0.31" classname="PhantomJS_2_1_1_(Windows_7_0_0).LoginComponent"/>
+  <testcase name="ManagerComponent should create Manager Details" time="0.243" classname="PhantomJS_2_1_1_(Windows_7_0_0).ManagerComponent"/>
+  <testcase name="ManagerComponent should render title in a h2 tag" time="0.252" classname="PhantomJS_2_1_1_(Windows_7_0_0).ManagerComponent"/>
+  <testcase name="PendingStatusComponent should be created" time="0" classname="PhantomJS_2_1_1_(Windows_7_0_0).PendingStatusComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="RouterlinkstubDirective should create an instance" time="0.003" classname="PhantomJS_2_1_1_(Windows_7_0_0).RouterlinkstubDirective"/>
+  <testcase name="AppComponent should create the app" time="0.2" classname="PhantomJS_2_1_1_(Windows_7_0_0).AppComponent"/>
+  <testcase name="AppComponent should have as title 'Leave Management Application'" time="0.105" classname="PhantomJS_2_1_1_(Windows_7_0_0).AppComponent"/>
+  <system-out>
+    <![CDATA[PhantomJS 2.1.1 (Windows 7.0.0) LOG: 'getEmployees called on employee.service'
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: 'getEmployees called on employee.service'
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: HttpResponse{headers: HttpHeaders{normalizedNames: Map{_t: ..., _i: ..., _f: ..., _l: ..., _s: ...}, lazyUpdate: null, lazyInit: function () { ... }}, status: 200, statusText: 'OK', url: 'http://localhost:8080/ftp71-0.0.1-SNAPSHOT/api/employees/1000', ok: true, type: 4, body: Object{empId: 1000, employeeName: 'Rohit', departmentName: 'CEO', employeeDateOfJoining: '2015-02-24', employeeEmail: 'rohitnair703@gmail.com', employeeContact: '8806272014', managerId: 0, availableLeaveBalance: 3}}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: 'getEmployees called on employee.service'
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: 'getEmployees called on employee.service'
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: 'getEmployees called on employee.service'
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: 'getEmployees called on employee.service'
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: HttpResponse{headers: HttpHeaders{normalizedNames: Map{_t: ..., _i: ..., _f: ..., _l: ..., _s: ...}, lazyUpdate: null, lazyInit: function () { ... }}, status: 200, statusText: 'OK', url: 'http://localhost:8080/ftp71-0.0.1-SNAPSHOT/api/employees/1000', ok: true, type: 4, body: Object{empId: 1000, employeeName: 'Rohit', departmentName: 'CEO', employeeDateOfJoining: '2015-02-24', employeeEmail: 'rohitnair703@gmail.com', employeeContact: '8806272014', managerId: 0, availableLeaveBalance: 3}}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: HttpResponse{headers: HttpHeaders{normalizedNames: Map{_t: ..., _i: ..., _f: ..., _l: ..., _s: ...}, lazyUpdate: null, lazyInit: function () { ... }}, status: 200, statusText: 'OK', url: 'http://localhost:8080/ftp71-0.0.1-SNAPSHOT/api/employees/1000', ok: true, type: 4, body: Object{empId: 1000, employeeName: 'Rohit', departmentName: 'CEO', employeeDateOfJoining: '2015-02-24', employeeEmail: 'rohitnair703@gmail.com', employeeContact: '8806272014', managerId: 0, availableLeaveBalance: 3}}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{body: [Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}, Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}]}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{body: [Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}, Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}]}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{body: [Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}, Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}]}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{body: [Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}, Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}]}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{body: [Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}, Object{empId: ..., employeeName: ..., departmentName: ..., employeeDateOfJoining: ..., employeeEmail: ..., employeeContact: ..., managerId: ..., availableLeaveBalance: ...}]}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+,PhantomJS 2.1.1 (Windows 7.0.0) LOG: Object{empId: 2001, employeeName: 'Sachita', departmentName: 'Finance', employeeDateOfJoining: '06-12-2016', employeeEmail: 'sachita@hexaware.com', employeeContact: 9404018529, managerId: 3, availableLeaveBalance: 5}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

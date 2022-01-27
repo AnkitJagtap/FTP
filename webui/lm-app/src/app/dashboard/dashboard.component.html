@@ -1,0 +1,16 @@
+<div class="bgimage" align=center>
+<body>
+    <h2 class="heading">Leave Management System!</h2>
+    <nav>
+      <div id ="mySidenav" class="sidenav">
+        <a href="#" id="about" [routerLink] = "['employeesearch']"> My Details </a>
+        <a href="#" id="blog" [routerLink] = "['managerdetails']"> My Manager Details </a>
+        <a href="#" id="projects" [routerLink] = "['leaveHistory']"> My Leave History </a>
+        <a href="#" id="contacts" [routerLink] = "['applyleave']"> New Application </a>
+        <a href="#" id="apply" [routerLink] = "['pendingStatus']"> Pending Status </a>
+        <a href="#" id="logout" [routerLink] = "['']"> Logout </a>
+    </div>
+    <router-outlet></router-outlet>
+    </nav>
+  </body>
+  </div>

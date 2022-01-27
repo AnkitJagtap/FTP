@@ -1,0 +1,25 @@
+.aaaa{
+    padding-left: 300px;
+    float: left ;
+
+}
+
+.mat-column-employee, .mat-column-startdate, .mat-column-enddate, .mat-column-noofleaves, .mat-column-leavereason, .mat-column-appliedon, .mat-column-approvedon,
+.mat-column-leavetype, .mat-column-leavestatus, .mat-column-managercomments{
+    flex: 0 0 100px;
+  }
+
+  .table{
+      width: 1000px;
+      align-items: center;
+  }
+
+.mat-header-cell-employee{
+    font-size: 25;
+    
+}
+
+.mat-column-employee {
+    display: flex;
+    justify-content: flex-start;
+    }

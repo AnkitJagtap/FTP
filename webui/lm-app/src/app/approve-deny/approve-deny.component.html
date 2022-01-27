@@ -1,0 +1,45 @@
+<body>
+<div class="bgimage" align=center> 
+            <link rel="stylesheet" type="text/css" href="C:\Users\Hvuser\workspace\FTP71\webui\lm-app\src\app\approve-deny\approve-deny.component.css">
+  <h1 style= "color:rgb(12, 170, 233);text-align:center;"><b>APPROVE OR DENY LEAVE</b> </h1>
+  <form>
+    <div id= "abc" align="left" >
+          <fieldset class="col-md-6">
+            <div class="ldetails">
+                  <p><b>Emp_ID :</b> {{employee?.empId}}</p>
+                  <p><b>Name :</b> {{employee?.employeeName}}</p>
+                  <p><b>Contact :</b> {{employee?.employeeContact}}</p>
+                  <p><b>Manager ID :</b> {{employee?.managerId}}</p>
+                  <p><b>Available leave bal :</b> {{employee?.availableLeaveBalance}}</p>
+            </div>
+
+            <div class="rdetails">
+                  <p><b>Start Date :</b> {{leavedetails?.startDate}}</p>
+                  <p><b>End Date :</b> {{leavedetails?.endDate}}</p>
+                  <p><b>No Of Days :</b> {{leavedetails?.noOfLeaves}}</p>
+                  <p><b>Leave Type :</b> {{leavedetails?.leaveType}}</p>
+                  <p><b>Leave Reason :</b> {{leavedetails?.leaveReason}}</p>
+            </div>
+       </fieldset>
+      </div><br>
+    </form>
+                  <p><b>Leave Id :</b> {{leavedetails?.leaveId}}</p>
+<div style="text-align:center">
+      <form #userForm="ngForm" (ngSubmit)="updateLeave(userForm)">
+
+      <div class= "form-group">
+              <label for= "managerComments"><b><font size="4">Manager Comments :</font>&nbsp;</b> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type = "text" class= "form-control" autocomplete="off"
+              id = "managerComments" required="required" [(ngModel)]= "model.managerComments" name="managerComments" #managerComments="ngModel">
+              <div *ngIf="managerComments.invalid && userForm.submitted && !isValidFormSubmitted"  [ngClass] = "'error'"> 
+                     <h6>Manager Comments is Required.</h6> 
+                    </div>
+          </div>        
+              <input type="button" class="btn btn-primary" value="APPROVE" (click)="approve()"> &nbsp; &nbsp;
+              <input type="button" class="btn btn-primary" value="DENY" (click)="deny()"> &nbsp; &nbsp;
+              <input type="button" class="btn btn-primary" value="CANCEL" (click)="cancel()">
+              <h3 *ngIf="isValidFormSubmitted == true"> STATUS: {{this.status.msg}}</h3>
+        </form>
+  </div>
+  </div>
+</body>

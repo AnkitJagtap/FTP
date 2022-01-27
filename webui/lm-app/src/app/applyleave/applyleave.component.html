@@ -1,0 +1,40 @@
+<div class="bgimage" align=center>
+<div class="body">
+  <div class="cover" align="center">
+    <h1>Apply for Leave</h1>
+    <form #userForm="ngForm" (ngSubmit)="applyLeave(userForm)">
+      <div class="applyForm">
+        <label for= "startDate"><b>Start Date :</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" required="required" [(ngModel)]="model.startDate" name="startDate" #startDate="ngModel" /><br/>
+        <div *ngIf="startDate.invalid && userForm.submitted && !isValidFormSubmitted"  [ngClass] = "'error'">
+          <h6>Start Date is Required.</h6>
+         </div>
+        <label for= "endDate"><b>End Date :</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" required="required" [(ngModel)]="model.endDate" name="endDate" #endDate="ngModel" /><br/>
+        <div *ngIf="endDate.invalid && userForm.submitted && !isValidFormSubmitted"  [ngClass] = "'error'"> 
+          <h6>End Date is Required.</h6> 
+         </div>
+        <label for= "leaveType"><b>Leave Type :</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select [(ngModel)]="model.leaveType" name="leaveType" required="required" #leaveType="ngModel" >
+          <option value="EL">EL</option> 
+          <option value="SL">SL</option>
+          <option value="PL">PL</option>
+          <option value="OL">OL</option>
+        </select><br/>
+        <div *ngIf="leaveType.invalid && userForm.submitted && !isValidFormSubmitted"  [ngClass] = "'error'"> 
+          <h6>Leave Type is Required.</h6> 
+         </div>
+        <label for= "leaveReason"><b>Leave Reason :</b></label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" autocomplete="off" required="required" [(ngModel)]="model.leaveReason" name="leaveReason" #leaveReason="ngModel" /><br/><br/>
+        <button class="btn btn-primary">Apply</button> &nbsp; &nbsp;
+        <input type="button" class="btn btn-primary" value="Cancel" (click)="cancel()">
+        <h3 *ngIf="isValidFormSubmitted == true">STATUS: {{this.status.msg}}</h3>
+      </div>
+    </form>
+  </div>
+  </div>
+</div>

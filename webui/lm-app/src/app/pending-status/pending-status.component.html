@@ -1,0 +1,71 @@
+<div class="aaaa ng-container">
+<div *ngIf="Pending!=null; else code">
+  
+  <h2>Pending Leave</h2>
+  <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+  </mat-form-field>
+
+  <mat-table #table [dataSource]="dataSource" matSort>
+
+  <ng-container matColumnDef="leaveid">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>Leave ID</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails"> {{leaveDetails?.leaveId}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="employeeid">
+    <mat-header-cell *matHeaderCellDef>Employee Id</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails"> {{leaveDetails?.employeeId}} </mat-cell>
+  </ng-container>
+  
+  <ng-container matColumnDef="startdate">
+    <mat-header-cell *matHeaderCellDef>Start Date</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails"> {{leaveDetails?.startDate}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="enddate">
+    <mat-header-cell *matHeaderCellDef>End Date</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails"> {{leaveDetails?.endDate}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="noofleaves">
+    <mat-header-cell *matHeaderCellDef>No Of Leaves</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails"> {{leaveDetails?.noOfLeaves}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="leavereason">
+    <mat-header-cell *matHeaderCellDef>Leave Reason</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails">{{leaveDetails?.leaveReason}}</mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="appliedon">
+    <mat-header-cell *matHeaderCellDef>Applied On</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails"> {{leaveDetails?.appliedOn}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="leavetype">
+    <mat-header-cell *matHeaderCellDef>Leave Type</mat-header-cell>
+    <mat-cell *matCellDef="let leaveDetails"> {{leaveDetails?.leaveType}} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row  *matRowDef="let row; columns: displayedColumns;" (click)="setClickRowDup(row?.leaveId, row?.employeeId)"></mat-row>
+
+  </mat-table>
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</div>
+
+<ng-template #code>
+    <div>
+      <h2>No Pending List</h2>
+    </div>
+  </ng-template>
+  <br/> <br/>
+  <div *ngIf="button==false">
+    <button mat-raised-button disabled>Approve/Deny</button>
+  </div>
+  <div *ngIf="button==true">
+    <strong>{{selectedRow}}</strong>
+    <button mat-button (click)="updateStatus()">Approve/Deny</button>
+  </div>
+</div>

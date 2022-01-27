@@ -1,0 +1,20 @@
+.aaaa{
+    padding-left: 300px;
+    float: left ;
+
+}
+
+.mat-column-leaveid, .mat-column-employeeid, .mat-column-enddate, .mat-column-startdate, .mat-column-noofleaves, .mat-column-leavereason, .mat-column-appliedon,
+.mat-column-leavetype{
+    flex: 0 0 100px;
+  }
+
+  .mat-table{
+    width: 775px;
+    align-items: center;
+}
+
+.mat-row:hover{
+background-color: rgba(47, 140, 223, 0.603);
+
+}

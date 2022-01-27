@@ -1,0 +1,80 @@
+<div class="aaaa ng-container">
+  <div *ngIf="leaveHistory!=null; else code">
+  <h2>Leave History</h2>
+  <mat-form-field>
+            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search">
+        </mat-form-field>
+
+
+  <mat-table  class="table" #table [dataSource]="dataSource" matSort>
+  
+    <ng-container matColumnDef="leaveId">
+      <mat-header-cell *matHeaderCellDef mat-sort-header > Leave Id </mat-header-cell>
+      <mat-cell *matCellDef="let lh"> {{lh.leaveId}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="employee">
+      <mat-header-cell *matHeaderCellDef> Employee Id </mat-header-cell>
+      <mat-cell *matCellDef="let lh"> {{ lh.employeeId }} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="startdate">
+        <mat-header-cell *matHeaderCellDef> Start Date </mat-header-cell>
+        <mat-cell *matCellDef="let lh"> {{ lh.startDate }} </mat-cell>
+      </ng-container>
+  
+      <ng-container matColumnDef="enddate">
+          <mat-header-cell *matHeaderCellDef> End Date </mat-header-cell>
+          <mat-cell *matCellDef="let lh"> {{ lh.endDate }} </mat-cell>
+        </ng-container>
+  
+        <ng-container matColumnDef="noofleaves" style="text-align:center">
+            <mat-header-cell *matHeaderCellDef> No Of Leaves </mat-header-cell>
+            <mat-cell *matCellDef="let lh"> {{ lh.noOfLeaves }} </mat-cell>
+          </ng-container>
+  
+          <ng-container matColumnDef="leavereason">
+              <mat-header-cell *matHeaderCellDef> Leave Reason </mat-header-cell>
+              <mat-cell *matCellDef="let lh"> {{ lh.leaveReason }} </mat-cell>
+            </ng-container>
+  
+            <ng-container matColumnDef="appliedon">
+              <mat-header-cell *matHeaderCellDef> Applied On </mat-header-cell>
+              <mat-cell *matCellDef="let lh"> {{ lh.appliedOn }} </mat-cell>
+            </ng-container>
+  
+            <ng-container matColumnDef="approvedon">
+              <mat-header-cell *matHeaderCellDef> Approved On </mat-header-cell>
+              <mat-cell *matCellDef="let lh"> {{lh.approvedOn}} </mat-cell>
+            </ng-container>
+  
+            <ng-container matColumnDef="leavetype">
+              <mat-header-cell *matHeaderCellDef> Leave Type </mat-header-cell>
+              <mat-cell *matCellDef="let lh"> {{lh.leaveType}} </mat-cell>
+            </ng-container>
+  
+            <ng-container matColumnDef="leavestatus">
+              <mat-header-cell *matHeaderCellDef> Leave Status </mat-header-cell>
+              <mat-cell *matCellDef="let lh"> {{lh.leaveStatus}} </mat-cell>
+            </ng-container>
+  
+            <ng-container matColumnDef="managercomments">
+              <mat-header-cell *matHeaderCellDef> Manager Comments </mat-header-cell>
+              <mat-cell *matCellDef="let lh"> {{lh.managerComments}} </mat-cell>
+            </ng-container>
+  
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  
+  </mat-table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+  </div>
+  </div>
+        
+  <ng-template #code>
+    <div>
+      <h2>No Previous History</h2>
+    </div>
+  </ng-template><br/><br/>

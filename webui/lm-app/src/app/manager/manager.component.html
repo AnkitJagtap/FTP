@@ -1,0 +1,47 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container">
+<br/>
+
+    	
+			<div class="panel-body">
+            
+            
+					
+					<div class="panel panel-default">
+            <div *ngIf="manager!= null; else code">
+              <fieldset class="col-md-6">    	
+              <legend align=center>Manager Details</legend>
+              <div class="ldetails">
+                <p><b>Employee Id :</b> {{manager?.empId}} </p>
+                <p><b>Employee Name :</b> {{manager?.employeeName}} </p>
+                <p><b>Department :</b> {{manager?.departmentName}} </p>
+              </div>
+              <div class="rdetails">
+                <p><b>Joining Date :</b> {{manager?.employeeDateOfJoining}} </p>
+                <p><b>Email :</b>  {{manager?.employeeEmail}} </p>
+                <p><b>Contact :</b> {{manager?.employeeContact}} </p>
+            </div>
+          </fieldset>		
+            </div>
+					</div>
+					
+        		
+      </div>
+</div>
+
+        <ng-template #code>
+          
+            <h2 align=center>WELCOME CEO</h2>
+          
+        </ng-template>
+				<!--<div class="clearfix"></div>-->
+           
+                
+
+
+
+
+

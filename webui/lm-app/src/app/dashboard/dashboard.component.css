@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+.bgimage{
+	background-image: url('https://netscandigital.com/wp-content/uploads/2014/12/113H.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+}
+.heading{
+    margin-top: 10px;
+    margin-left: 500px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 17%;
+    height: 525px; /* only for demonstration, should be removed */
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #40a84e;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.myDetails{
+    margin-left: 400px;
+    margin-top: 125px;
+    width: 550px;
+    height: 200px;
+
+}
+
+
+#mySidenav a {
+    margin-top: 100px;
+    position: absolute;
+    left: -10px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 240px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(248, 242, 242);
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 80px;
+    background-color: rgb(15, 3, 3);
+}
+
+#blog {
+    top: 150px;
+    background-color:rgb(15, 3, 3)
+}
+
+#projects {
+    top: 220px;
+    background-color: rgb(15, 3, 3)
+}
+
+#contacts {
+    top: 290px;
+    background-color: rgb(15, 3, 3)
+}
+#apply {
+    top: 360px;
+    background-color: rgb(15, 3, 3)
+}
+#logout {
+    top: 430px;
+    background-color: rgb(15, 3, 3)
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}

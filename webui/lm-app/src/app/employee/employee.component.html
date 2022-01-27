@@ -1,0 +1,42 @@
+<div class="bgimage" align=center> 
+  <h1 margin-top:100px >
+      Welcome to Leave Management System
+    </h1>
+    
+  <link rel="stylesheet" type="text/css" href="C:\Users\Hvuser\workspace\FTP71\webui\lm-app\src\app\employee\employee.component.css">
+  <div class="employees">
+<table  class="table table-striped">
+<tr class="noBorder">
+  <th align=center>Id</th>
+  <th align=center>Name</th>
+  <th align=center>Department Name</th>
+  <th align=center>Date Of Joining</th>
+  <th align=center>Email</th>
+  <th align=center>Contact</th>
+  <th align=center>Manager Id</th>
+  <th align=center>Earned Leave Balance</th>
+  <th align=center>Paid Leave Balance</th>
+  <th align=center>Sick Leave Balance</th>
+  <th align=center>Optional Leave Balance</th>
+  <th align=center>Login</th>
+</tr>
+<tr *ngFor="let e of details">
+  <td align=center>{{e.empId}}</td>
+  <td align=center>{{e?.employeeName}}</td>
+  <td align=center>{{e?.departmentName}}</td>
+  <td align=center>{{e?.employeeDateOfJoining}}</td>   
+  <td align=center>{{e?.employeeEmail}}</td> 
+  <td align=center>{{e?.employeeContact}}</td> 
+  <td align=center>{{e?.managerId}}</td>   
+  <td align=center>{{e?.earnedLeaveBalance}}</td> 
+  <td align=center>{{e?.paidLeaveBalance}}</td>   
+  <td align=center>{{e?.sickLeaveBalance}}</td>   
+  <td align=center>{{e?.optionalLeaveBalance}}</td>   
+  <td>
+    <input type="button" class="btn btn-primary" value="Login" (click)="login(e.empId,e.managerId,e.earnedLeaveBalance,e.paidLeaveBalance,e.sickLeaveBalance,e.optionalLeaveBalance)" />
+  </td>
+  
+</tr>
+</table>
+</div>
+</div>

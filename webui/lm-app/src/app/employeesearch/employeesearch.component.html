@@ -1,0 +1,47 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+<br/>
+
+    	
+			<div class="panel-body">
+            
+            <fieldset class="fset">    	
+					<legend align=center>Personal Details</legend>
+					
+					<div class="panel panel-default">
+            <div class="ldetails">
+              <div class="left">
+                  <img src="assets/{{eno}}.png" class="icon" />
+              </div>
+              <div class="right">
+              <p><b> Employee Id :</b>{{employee?.empId}}</p>
+              <p><b>Employee Name :</b>{{employee?.employeeName}}</p>
+             <p><b> Department :</b>{{employee?.departmentName}}</p>
+             <p><b>Joining Date :</b>{{employee?.employeeDateOfJoining}}</p>
+             <p><b>Paid Leave Balance :</b>{{employee?.paidLeaveBalance}}</p>
+            </div>
+          </div>
+          <div class="rdetails">
+             <p><b> Email : </b>{{employee?.employeeEmail}}</p>
+             <p><b>Contact : </b>{{employee?.employeeContact}}</p>
+             <p><b> Manager Id :</b>{{employee?.managerId}}</p>
+             <p><b>Earned Leave Balance :</b>{{employee?.earnedLeaveBalance}}</p>
+             <p><b>Sick Leave Balance :</b>{{employee?.sickLeaveBalance}}</p>
+             <p><b>Optional Leave Balance :</b>{{employee?.optionalLeaveBalance}}</p>
+            </div>
+					</div>
+					
+				</fieldset>				
+				
+				<div class="clearfix"></div>
+            </div>
+                
+</div>
+
+
+
+

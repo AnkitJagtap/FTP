@@ -1,0 +1,36 @@
+
+.bgimage{
+	background-image: url('https://netscandigital.com/wp-content/uploads/2014/12/113H.jpg');
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100vh;
+}
+.bgimage h2{
+    padding-top: 50px;
+}
+
+.employees {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 100px;
+    table-layout: auto;
+}
+
+.employees td, #customers th {
+    border: 1px solid rgba(67, 136, 216, 0.452);
+    padding: 8px;
+}
+
+.employees tr:nth-child(even){background-color: #16030357;}
+
+.employees tr:hover {background-color: rgba(233, 141, 141, 0.445);}
+
+.employees th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: rgba(76, 175, 79, 0);
+    color:black;
+}   
+
